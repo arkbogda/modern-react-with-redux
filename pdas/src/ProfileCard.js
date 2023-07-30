@@ -1,4 +1,4 @@
-function ProfileCard({ title, handle }) {
+function ProfileCard({ title, handle, image }) {
 
     //1. taking entire Props Object
     // const title = props.title;
@@ -9,6 +9,7 @@ function ProfileCard({ title, handle }) {
 
     return (
         <div>
+            <img src={image} alt="pda logo"/>
             <div>Title is {title}</div>
             <div>Handle is {handle}</div>
         </div>
